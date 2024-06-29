@@ -8,7 +8,7 @@
 void initialize() {
     
     pros::lcd::initialize(); // initialize brain screen
-	EZchassis.initialize(); // EZ calibrate sensors (MUST BE FIRST)
+    EZchassis.initialize(); // EZ calibrate sensors (MUST BE FIRST)
     LEMchassis.calibrate(false); // LEMLIB calibrate sensors (MUST BE SECOND)
     defaultConstants(); // EZ set constants
     EZchassis.opcontrol_curve_default_set(3, 3.5); // EZ set drive curve
