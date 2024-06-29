@@ -1,14 +1,10 @@
 #include "main.h"
+#include "lemlib/api.hpp"
+#include "lemlib/chassis/chassis.hpp"
+#include "lemlib/asset.hpp"
 
-//motors
-extern pros::Motor leftFront;
-extern pros::Motor leftMidFront;
-extern pros::Motor leftMidBack;
-extern pros::Motor leftBack;
-extern pros::Motor rightFront;
-extern pros::Motor rightMidFront;
-extern pros::Motor rightMidBack;
-extern pros::Motor rightBack;
+// controller
+extern pros::Controller controller;
 
 //motor groups
 extern std::vector<int8_t> lemLeftMotors;
@@ -22,13 +18,15 @@ extern pros::MotorGroup rightMotors;
 extern pros::Imu imu;
 extern pros::Rotation horizontalEnc;
 extern pros::Rotation verticalEnc;
+extern lemlib::TrackingWheel horizontal;
+extern lemlib::TrackingWheel vertical;
 
 //constructors
 extern ez::Drive EZchassis;
 extern lemlib::Drivetrain drivetrain;
-/*extern lemlib::ControllerSettings linearController;
-extern lemlib::ControllerSettings;
+extern lemlib::ControllerSettings linearController;
+extern lemlib::ControllerSettings angularController;
 extern lemlib::OdomSensors sensors;
 extern lemlib::ExpoDriveCurve throttleCurve;
 extern lemlib::ExpoDriveCurve steerCurve;
-extern lemlib::Chassis chassis;*/
+extern lemlib::Chassis LEMchassis;

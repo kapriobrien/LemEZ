@@ -74,6 +74,7 @@ void opcontrol(void);
 
 #include "EZ-Template/api.hpp"
 #include "Custom-Headers/globals.hpp"
+#include "Custom-Headers/autons.hpp"
 #include "lemlib/api.hpp"
 //#include "pros/misc.h"
 //#include "pros/rtos.hpp"
