@@ -71,9 +71,15 @@ void opcontrol(void);
 #endif
 
 #ifdef __cplusplus
-/**
- * You can add C++-only headers here
- */
+
+#include "EZ-Template/api.hpp"
+#include "Custom-Headers/globals.hpp"
+#include "lemlib/api.hpp"
+//#include "pros/misc.h"
+//#include "pros/rtos.hpp"
+#include "lemlib/chassis/chassis.hpp"
+#include "lemlib/asset.hpp"
+
 //#include <iostream>
 #endif
 
