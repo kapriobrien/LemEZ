@@ -13,7 +13,7 @@
 pros::Controller controller(pros::E_CONTROLLER_MASTER);
 
 // motor groups
-std::vector<int8_t> lemLeftMotors = {-1, =2, =3}; //LEFT lemlib type motor array
+std::vector<int8_t> lemLeftMotors = {-1, -2, -3}; //LEFT lemlib type motor array
 std::vector<int8_t> lemRightMotors = {4, -5, 6}; //RIGHT lemlib type motor array 
 std::vector<int> ezLeftMotors = {lemLeftMotors[0], lemLeftMotors[1], lemLeftMotors[2]}; //LEFT ez type motor array 
 std::vector<int> ezRightMotors = {lemRightMotors[0], lemRightMotors[1], lemRightMotors[2]}; //RIGHT ez type motor array 
